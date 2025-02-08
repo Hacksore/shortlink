@@ -1,0 +1,30 @@
+{
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "enabled": true,
+        "id": "redirect_rules",
+        "path": "redirect_rules.json"
+      }
+    ]
+  },
+  "description": "MVP browser extension",
+  "host_permissions": [
+    "*://gg/*"
+  ],
+  "manifest_version": 3,
+  "name": "shortlinks",
+  "omnibox": {
+    "keyword": "gg/"
+  },
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "storage",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "version": "1.0.0"
+}

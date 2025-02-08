@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://hacksore.com/\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://gg/(.*)",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
