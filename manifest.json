@@ -13,7 +13,7 @@
   },
   "description": "MVP browser extension",
   "host_permissions": [
-    "*://gg/*"
+    "*://*/*"
   ],
   "manifest_version": 3,
   "name": "shortlinks",

@@ -12,5 +12,19 @@
       "regexFilter": "^https?://gg/(.*)",
       "resourceTypes": ["main_frame"]
     }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://hacksore.com/\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://www\\.gg/(.*)",
+      "resourceTypes": ["main_frame"]
+    }
   }
 ]
